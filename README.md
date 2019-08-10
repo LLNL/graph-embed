@@ -7,7 +7,7 @@ graph-embed is a small library for (multi-level) graph partitioning and embeddin
 
 [linalgcpp](github.com/gelever/linalgcpp)
 [OpenMP](www.openmp.org/)
-[Plotly] plot.ly/
+[Plotly](plot.ly/)
 
 ## Installation
 
