@@ -1,0 +1,17 @@
+
+// Copyright 2019 Lawrence Livermore National Security. 
+// Produced at the Lawrence Livermore National Laboratory.
+// LLNL-CODE-781679. All Rights reserved. See file LICENSE for details.
+//
+// This file is part of graph-embed. For more information and source code
+// availability, see github.com/LLNL/graph-embed
+//
+// SPDX-License-Identifier: LGPL-2.1
+
+#ifndef __partitioner_CONFIG_H
+#define __partitioner_CONFIG_H
+
+// Place cmake defined variables here
+//#cmakedefine01 example_CONFIG_VAR
+
+#endif //__partitioner_CONFIG_H

@@ -1,0 +1,25 @@
+
+# Copyright 2019 Lawrence Livermore National Security. 
+# Produced at the Lawrence Livermore National Laboratory.
+# LLNL-CODE-781679. All Rights reserved. See file LICENSE for details.
+#
+# This file is part of graph-embed. For more information and source code
+# availability, see github.com/LLNL/graph-embed
+#
+# SPDX-License-Identifier: LGPL-2.1
+
+get_filename_component(example_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+include(CMakeFindDependencyMacro)
+
+list(APPEND CMAKE_MODULE_PATH ${example_CMAKE_DIR})
+
+find_package(linalgcpp REQUIRED)
+find_package(partitioner REQUIRED)
+
+LIST(REMOVE_AT CMAKE_MODULE_PATH -1)
+
+if(NOT TARGET example::example)
+    include("${example_CMAKE_DIR}/exampleTargets.cmake")
+endif()
+
+set(example_LIBRARIES example::example)
